@@ -1,0 +1,83 @@
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300vmax;
+    height: 300vmax;
+    translate: -50% -50%;
+    background-image: url('http://blog.test/images/fondo.gif');
+    background-repeat: repeat;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.header-background {
+    background-color: rgb(111, 137, 255);
+    color: white;
+}
+
+.header-background a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-background a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.header-align {
+    width: 100%;
+}
+
+.app-border {
+    border: 3px solid yellow;
+}
+
+.custom-content {
+    background-color: white;
+    height: 90vh;
+}
+
+.main-container {
+    position: relative;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.app-corner-gif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    z-index: 10;
+    transition: transform 0.5s ease;
+}
+
+.app-corner-gif:hover {
+    transform: translateX(-200px) translateY(500px) rotate(360deg) scale(2);
+    
+    transition: transform 0.5s ease;
+}
+
+.app-corner-gif-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    z-index: 10;
+    border-radius: 50%;
+    padding: 15px;
+    transition: transform 0.5s ease;
+}
+
+.app-corner-gif-left:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
