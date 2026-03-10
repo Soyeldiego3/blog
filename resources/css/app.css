@@ -11,7 +11,7 @@ body::before {
     width: 300vmax;
     height: 300vmax;
     translate: -50% -50%;
-    background-image: url('http://blog.test/images/fondo.gif');
+    background-image: url('/images/fondo.gif');
     background-repeat: repeat;
     transform: rotate(-45deg);
     z-index: -1;
