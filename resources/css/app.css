@@ -1,7 +1,7 @@
 body {
     position: relative;
     overflow: auto;
-    background-image: url('/images/fondo-test.jpg');
+    background-image: url('/images/fondo-test.webp');
     background-repeat: no-repeat;
     background-size: cover;          /* cubre toda la pantalla */
     background-attachment: fixed;    /* no se mueve al hacer scroll */
@@ -111,7 +111,7 @@ body {
 .sidebar-container {
     background-color: rgb(47, 55, 94);
     color: rgb(91, 196, 245);
-    background-image: url('/images/side.png');
+    background-image: url('/images/side.webp');
     background-size: 200% 100%;
     background-repeat: no-repeat;
 }

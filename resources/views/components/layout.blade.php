@@ -11,7 +11,7 @@
 <body>
     <div class="main-container">
         <img src="{{ asset('images/miku.gif') }}" class="app-corner-gif mikudayo">
-        <img src="{{ asset('images/cute-anime.gif') }}" class="app-corner-gif-left pupue">
+        <img src="{{ asset('images/cute-anime.webp') }}" class="app-corner-gif-left pupue">
         <div class="app-border">
             <div class="custom-content">
                 <div class="header-background header-align">
