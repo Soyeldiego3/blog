@@ -25,13 +25,13 @@
                     </div>
                 </div>
                 <div class="row mx-0">
-                    <div class="col-2 sidebar-container sidebar-left d-none d-md-block">
+                    <div class="col-2 sidebar-container sidebar-left d-none d-xl-block">
                         {{ $sidebar_left ?? '' }}
                     </div>
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-xl-8">
                         {{ $slot }}
                     </div>
-                    <div class="col-2 sidebar-container sidebar-right d-none d-md-block">
+                    <div class="col-2 sidebar-container sidebar-right d-none d-xl-block">
                         {{ $sidebar_right ?? '' }}
                     </div>
                 </div>

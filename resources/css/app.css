@@ -68,12 +68,12 @@ body {
     position: relative;
     margin: 50px auto;
     width: 95%;            
-    max-width: 1400px;
+    max-width: 1700px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .main-container {
-        width: clamp(600px, 68vw, 1400px); 
+        width: clamp(600px, 70vw, 1700px); 
     }
 }
 

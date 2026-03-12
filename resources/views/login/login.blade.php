@@ -7,11 +7,11 @@
                 <form>
                     <div class="mb-3">
                         <label class="form-label">Usuario</label>
-                        <input type="email" class="form-control" disabled>
+                        <input type="email" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" disabled>
+                        <input type="password" class="form-control" >
                     </div>
                     <button class="btn btn-primary w-100" disabled>Entrar</button>
                 </form>
