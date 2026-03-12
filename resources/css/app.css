@@ -1,9 +1,13 @@
 body {
     position: relative;
     overflow: auto;
+    background-image: url('/images/fondo-test.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;          /* cubre toda la pantalla */
+    background-attachment: fixed;    /* no se mueve al hacer scroll */
+    background-position: center;     /* centrada */
 }
-
-body::before {
+/* body::before {
     content: '';
     position: fixed;
     top: 50%;
@@ -11,10 +15,16 @@ body::before {
     width: 300vmax;
     height: 300vmax;
     translate: -50% -50%;
-    background-image: url('https://devlgx.studio/images/fondo.gif');
+    background-image: url('/public/images/fondo-test.jpg');
     background-repeat: repeat;
     transform: rotate(-45deg);
     z-index: -1;
+} */
+
+.site-logo {
+    width: clamp(200px, 20vw, 400px);
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
 .header-background {
@@ -34,6 +44,9 @@ body::before {
 .header-align {
     width: 100%;
     min-height: clamp(80px, 15vh, 150px);
+    display: flex;              /* centrado vertical */
+    align-items: center;
+    justify-content: center;
 }
 
 .app-border {
@@ -42,7 +55,7 @@ body::before {
 
 .custom-content {
     background-color: white;
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
 }
@@ -54,15 +67,21 @@ body::before {
 .main-container {
     position: relative;
     margin: 50px auto;
-    width: 90%;
-    max-width: 1300px;
+    width: 95%;            
+    max-width: 1400px;
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        width: clamp(600px, 68vw, 1400px); 
+    }
 }
 
 .app-corner-gif {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
-    width: 150px;
+    width: clamp(60px, 8vw, 150px);
     z-index: 10;
     transition: transform 0.5s ease;
 }
@@ -77,7 +96,7 @@ body::before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 150px;
+    width: clamp(100px, 15vw, 150px);
     z-index: 10;
     border-radius: 50%;
     padding: 15px;
@@ -92,7 +111,7 @@ body::before {
 .sidebar-container {
     background-color: rgb(47, 55, 94);
     color: rgb(91, 196, 245);
-    background-image: url('https://devlgx.studio/images/side.png');
+    background-image: url('/images/side.png');
     background-size: 200% 100%;
     background-repeat: no-repeat;
 }
@@ -103,4 +122,15 @@ body::before {
 
 .sidebar-right {
     background-position: right center;  /* muestra la mitad derecha */
+}
+
+.login-button {
+    width: clamp(100px, 12vw, 300px);
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.login-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }

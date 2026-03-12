@@ -15,18 +15,23 @@
         <div class="app-border">
             <div class="custom-content">
                 <div class="header-background header-align">
-                    <div class="p-3 text-center">
-                        <a href="/"><h1>Pagina Wee</h1></a>
-                    </div> 
+                    <div class="position-relative d-flex align-items-center justify-content-end w-100 px-3">
+                        <div class="position-absolute start-50 translate-middle-x">
+                            <a href="/"><img src="{{ asset('images/logo.png') }}" alt="Logo" class="site-logo"></a>
+                        </div>
+                        <a href="/login">
+                            <img src="{{ asset('images/login.png') }}" class="login-button">
+                        </a>
+                    </div>
                 </div>
                 <div class="row mx-0">
-                    <div class="col sidebar-container sidebar-left d-none d-md-block">
+                    <div class="col-2 sidebar-container sidebar-left d-none d-md-block">
                         {{ $sidebar_left ?? '' }}
                     </div>
-                    <div class="col-8">
+                    <div class="col-12 col-md-8">
                         {{ $slot }}
                     </div>
-                    <div class="col sidebar-container sidebar-right d-none d-md-block">
+                    <div class="col-2 sidebar-container sidebar-right d-none d-md-block">
                         {{ $sidebar_right ?? '' }}
                     </div>
                 </div>
