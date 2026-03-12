@@ -1,6 +1,9 @@
 <x-layout>
     <div class="container py-4">
         <div class="row justify-content-center">
+            <div class="col">
+                <a> Hola </a>
+            </div>
             <div class="col-12 col-md-8 col-lg-6">
                 <!--
                 @if(session('message'))
@@ -39,6 +42,9 @@
                     {{ $posts->links() }}
                 </div>
 
+            </div>
+            <div class="col">
+                <a> Hola </a>
             </div>
         </div>
     </div>
