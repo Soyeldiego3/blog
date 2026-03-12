@@ -19,8 +19,16 @@
                         <a href="/"><h1>Pagina Wee</h1></a>
                     </div> 
                 </div>
-                <div>
-                    {{ $slot }}
+                <div class="row mx-0">
+                    <div class="col sidebar-container sidebar-left d-none d-md-block">
+                        {{ $sidebar_left ?? '' }}
+                    </div>
+                    <div class="col-8">
+                        {{ $slot }}
+                    </div>
+                    <div class="col sidebar-container sidebar-right d-none d-md-block">
+                        {{ $sidebar_right ?? '' }}
+                    </div>
                 </div>
             </div>
         </div>

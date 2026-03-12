@@ -1,9 +1,15 @@
 <x-layout>
+    <x-slot:sidebar_left>
+        <x-sidebar-left />
+    </x-slot:sidebar_left>
+
+    <x-slot:sidebar_right>
+        <x-sidebar-right />
+    </x-slot:sidebar_right>
+
+    
     <div class="container py-4">
         <div class="row justify-content-center">
-            <div class="col">
-                <a> Hola </a>
-            </div>
             <div class="col-12 col-md-8 col-lg-6">
                 <!--
                 @if(session('message'))
@@ -41,10 +47,6 @@
                 <div class="mt-4">
                     {{ $posts->links() }}
                 </div>
-
-            </div>
-            <div class="col">
-                <a> Hola </a>
             </div>
         </div>
     </div>

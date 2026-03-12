@@ -11,7 +11,7 @@ body::before {
     width: 300vmax;
     height: 300vmax;
     translate: -50% -50%;
-    background-image: url('/images/fondo.gif');
+    background-image: url('https://devlgx.studio/images/fondo.gif');
     background-repeat: repeat;
     transform: rotate(-45deg);
     z-index: -1;
@@ -37,19 +37,25 @@ body::before {
 }
 
 .app-border {
-    border: 3px solid yellow;
+    border: 3px solid rgb(240, 240, 240);
 }
 
 .custom-content {
     background-color: white;
     min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-content .row {
+    flex: 1;
 }
 
 .main-container {
     position: relative;
     margin: 50px auto;
     width: 90%;
-    max-width: 1000px;
+    max-width: 1300px;
 }
 
 .app-corner-gif {
@@ -81,4 +87,20 @@ body::before {
 .app-corner-gif-left:hover {
     transform: scale(1.1);
     transition: transform 0.5s ease;
+}
+
+.sidebar-container {
+    background-color: rgb(47, 55, 94);
+    color: rgb(91, 196, 245);
+    background-image: url('https://devlgx.studio/images/side.png');
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+}
+
+.sidebar-left {
+    background-position: left center;   /* muestra la mitad izquierda */
+}
+
+.sidebar-right {
+    background-position: right center;  /* muestra la mitad derecha */
 }
